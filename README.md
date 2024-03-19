@@ -136,3 +136,14 @@ ENTREGA:
 	</p>
 
 </pre>
+
+# 6. Llamadas al sistema y entrada/salida
+# Marco Teórico:
+En sistemas operativos basados en Linux, las llamadas al sistema son la forma en que un programa solicita servicios del núcleo del sistema operativo. Estas llamadas permiten a los programas acceder a recursos del sistema como archivos, dispositivos de hardware, y otros servicios del kernel. Las llamadas al sistema proporcionan una interfaz entre el espacio de usuario y el espacio del kernel, permitiendo a los programas ejecutarse de manera segura y eficiente.
+
+Para operaciones de entrada/salida, los programas pueden utilizar llamadas al sistema como read() y write(), que permiten leer y escribir datos desde y hacia dispositivos, archivos o flujos de datos. Estas llamadas al sistema están optimizadas para interactuar eficientemente con el hardware y proporcionar una interfaz estándar para los programas.
+
+En sistemas embebidos como Raspberry Pi, el mapeo de periféricos en memoria es una técnica común para acceder y controlar hardware externo. Esto implica asignar direcciones de memoria a los registros de control de los periféricos, lo que permite a los programas interactuar directamente con ellos como si estuvieran accediendo a la memoria.
+
+# Programa
+
