@@ -145,5 +145,38 @@ Para operaciones de entrada/salida, los programas pueden utilizar llamadas al si
 
 En sistemas embebidos como Raspberry Pi, el mapeo de periféricos en memoria es una técnica común para acceder y controlar hardware externo. Esto implica asignar direcciones de memoria a los registros de control de los periféricos, lo que permite a los programas interactuar directamente con ellos como si estuvieran accediendo a la memoria.
 
-# Programa
+# Programa Ejemplo:
 
+```C
+User
+#include <unistd.h> // Para las llamadas al sistema read() y write()
+
+#define BUFFER_SIZE 256 // Tamaño del buffer para almacenar la cadena
+
+int main() {
+    char buffer[BUFFER_SIZE]; // Buffer para almacenar la cadena
+    ssize_t bytes_read, bytes_written; // Variables para almacenar el número de bytes leídos y escritos
+
+    // Leer desde la entrada estándar (teclado)
+    bytes_read = read(STDIN_FILENO, buffer, BUFFER_SIZE);
+
+    // Verificar si la lectura fue exitosa
+    if (bytes_read > 0) {
+        // Escribir en la salida estándar (pantalla)
+        bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
+        
+        // Verificar si la escritura fue exitosa
+        if (bytes_written != bytes_read) {
+            write(STDERR_FILENO, "Error escribiendo en la salida estándar.\n", 40);
+            return 1; // Error al escribir
+        }
+    } else {
+        write(STDERR_FILENO, "Error leyendo desde la entrada estándar.\n", 40);
+        return 1; // Error al leer
+    }
+
+    return 0; // Éxito
+}
+
+
+```
