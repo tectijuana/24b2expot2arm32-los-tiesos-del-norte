@@ -137,13 +137,52 @@ ENTREGA:
 
 </pre>
 
+
+<pre>
+
+	<p align=center>
 # 6. Llamadas al sistema y entrada/salida
+
+
+# Introducción
+En este proyecto lo que mostraremos es un programa en el que al ingresar una línea de texto, el programa nos arroje el mismo resultado que escribimos anteriormente. a su vez contamos con información en el marco teórico que revela los puntos más importantes del proyecto en cuanto a teoría.
+
 # Marco Teórico:
 En sistemas operativos basados en Linux, las llamadas al sistema son la forma en que un programa solicita servicios del núcleo del sistema operativo. Estas llamadas permiten a los programas acceder a recursos del sistema como archivos, dispositivos de hardware, y otros servicios del kernel. Las llamadas al sistema proporcionan una interfaz entre el espacio de usuario y el espacio del kernel, permitiendo a los programas ejecutarse de manera segura y eficiente.
 
 Para operaciones de entrada/salida, los programas pueden utilizar llamadas al sistema como read() y write(), que permiten leer y escribir datos desde y hacia dispositivos, archivos o flujos de datos. Estas llamadas al sistema están optimizadas para interactuar eficientemente con el hardware y proporcionar una interfaz estándar para los programas.
 
 En sistemas embebidos como Raspberry Pi, el mapeo de periféricos en memoria es una técnica común para acceder y controlar hardware externo. Esto implica asignar direcciones de memoria a los registros de control de los periféricos, lo que permite a los programas interactuar directamente con ellos como si estuvieran accediendo a la memoria.
+
+# Concepto de llamadas al sistema (system calls):
+
+Las llamadas al sistema son interfaces proporcionadas por el sistema operativo para permitir que los programas soliciten servicios del núcleo del sistema operativo. 
+Las llamadas al sistema son el mecanismo fundamental a través del cual los programas en el espacio de usuario pueden acceder a recursos y servicios del sistema operativo.
+
+
+# Cómo emplear las llamadas al sistema:
+La mayor parte del código de Linux está escrito en C. Aunque técnicamente, se puede invocar una llamada al sistema desde cualquier lenguaje de programación, optaremos por el C, ya que es el lenguaje nativo del sistema operativo. Uno podría argumentar que analizar las llamadas al sistema desde un lenguaje ensamblador sería una aproximación más directa, pero esto no es del todo preciso. Linux está diseñado para funcionar en una variedad de arquitecturas, cada una con su propia manera de expresar las llamadas al sistema en código máquina. En C, estos detalles se vuelven transparentes, ya que es un lenguaje de nivel superior que está menos ligado a la arquitectura subyacente. No obstante, mencionaremos algunos aspectos.
+
+# Tipos de llamadas al sistema:
+Las llamadas al sistema pueden clasificarse en diferentes categorías, como operaciones de administración de procesos, gestión de memoria, operaciones de entrada/salida, comunicación entre procesos, gestión de archivos y sistemas de archivos, y operaciones de red, entre otros.
+
+- Operaciones de entrada/salida (I/O):
+La entrada/salida (I/O) es un aspecto fundamental del funcionamiento de los sistemas informáticos, ya que implica la transferencia de datos entre el sistema y dispositivos externos.
+Las operaciones de entrada/salida pueden ser sincrónicas o asíncronas, dependiendo de si el programa espera o no a que se complete la operación antes de continuar con otras tareas.
+
+- Llamadas al sistema relacionadas con entrada/salida:
+Las llamadas al sistema como read() y write() son utilizadas por los programas para leer y escribir datos desde y hacia dispositivos de entrada/salida como archivos, sockets de red y dispositivos de hardware.
+Otras llamadas al sistema relacionadas con entrada/salida incluyen open(), close(), ioctl(), fcntl(), select(), poll(), entre otras, que proporcionan diversas funcionalidades para gestionar y controlar operaciones de entrada/salida.
+
+- Optimización de entrada/salida:
+Los sistemas operativos implementan técnicas de optimización para mejorar el rendimiento de las operaciones de entrada/salida, como la utilización de búferes de entrada/salida, operaciones asíncronas y técnicas de multiplexación para gestionar múltiples operaciones de entrada/salida de manera eficiente.
+
+- Gestión de periféricos en sistemas embebidos:
+En sistemas embebidos, como Raspberry Pi, el mapeo de periféricos en memoria es una técnica común para acceder y controlar hardware externo, lo que permite a los programas interactuar directamente con los periféricos como si estuvieran accediendo a la memoria del sistema.
+
+	</p>
+
+</pre>
 
 # Programa Ejemplo:
 
