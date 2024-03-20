@@ -62,7 +62,7 @@ Alumnos:
 Aguiñaga Flores Luis Fernando - 21210354
 Perez Gonzalez Kevin William - 21212019
 Luna Bernal Juan Francisco - 21210393
-Martienz Flores Manuel Andres - 21210396
+Martinez Flores Manuel Andres - 21210396
 Gamboa Hernández Esmeralda - 21210374
 
 	</p>
