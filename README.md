@@ -1,38 +1,3 @@
-
-<!---
-   Para comentarios usar este bloque para documentar pendientes, secuencias, etc.
---->
-
-
-![](https://s3.amazonaws.com/videos.pentesteracademy.com/videos/badges/low/arm-assembly.png)
-
-Borrar y modificar README
-
-# Utilizar los dos directorios
-
-- code  - ahi depositar sus programas los ***archivos extensión *.s****  (Source File) algunos autores en x86 de ponen .asm y en otras plataformas ARM compatibles la extension *.s
-- Todo programa lleva su comentario en la parte de arriba, objetivo y nombre del programador minimo, como templete
-- images  - de haber algo de pantallas ahi se presentaran, su busca documentarlas en MARKDOWN el código es:
-
-``` ![](images/---archivo.jpg---) recordar que no lleva espacios```
-
-<!---
-  Los nombres de las imagenes no deben cambiar de preferenci el nombre del programa como:  KIOSKO.cpp (su pantallas serian KISOCO.jpg, KIOSCO-1.jpg, KIOSCO-2.jpg ... )
-  Y asi procurar estar agrupados.
---->
-
-
-
-- Programa en MarkDown es inicia con tres tildes * (`) sin espacio, seguido de el lenguaje de programacion, al final del codigo se poner otra vez los mismos tilder..
-
-No se usan espacios en nombres de archivos, usar los nombres estilo camelCase (primera palabra minusculas, mayuscula solo la 1ra letra de cada palabra subsecuente):  ejemplo: sensorHumo, etc.
-
-Suerte.
-
-
-
-------
-
 <pre>
 
 	<p align=center>
@@ -58,7 +23,7 @@ Unidad:
 Título del trabajo:
 Exposiciones
 
-Alumnos:
+Estudiante:
 Aguiñaga Flores Luis Fernando - 21210354
 Perez Gonzalez Kevin William - 21212019
 Luna Bernal Juan Francisco - 21210393
@@ -69,125 +34,110 @@ Gamboa Hernández Esmeralda - 21210374
 
 </pre>
 
-<pre>
 
-	<p align=left>
 
-Repositorio en el cual se desarrollaron distintos ejercicios en el lenguaje de 
-programacion c++, tomados del libro "Problemas para resolver con computadora" 
-1ra edicion (1985), por el autor Donald D. Spencer. 
-
-Los ejercicios corresponden al capitulo 6 del libro, entre las paginas 77 a 86.
-Se realizaron 25 problemas debido a la entrega fuera del limite de tiempo.
-
-CONDICIONES:
-
-	EXTEMPORÁNEOS DE LA FECHA DE ENTREGA, despues del 25 de marzo y 1 segundo:
-
-	-Solo 25 problemas a resolver y están en aleatorio las condiciones de uso, 
-		algunos simples otros de recordar, etc. CAPITULO 6 en adelante.
-
-	-Agregar las indicaciones de los criterios de la rùbrica
 	
-RÚBRICA:
-
-        Todo problema es necesario siga el templete OBLIGATORIO para entregar el 
-		problema codificado, usted puede correr sus programas con su estilo 
-		pero ya que este funcionando, debe arreglarlo a presentación para su 
-		evaluación.
-
-        MODIFICAR LA PORTADA CON MARKDOWN Y ACTUALIZARLA, esta libre de cambiar 
-		todo.
-        Los archivos deben tener su extensión .CPP (no .txt, etc.)
-
-	Los problemas están en la relación siguiente:
-	
-	- 100% Sigue el templete proporcionado por el docente y corren 10 
-		Problemas (o si incremento en programas por supuesta dificultad) 
-		completamente en GITHUB Classroom (no repositorio personal),  los 
-		archivos deben tener su extensión .CPP (no .txt, .EXE, etc.) acomodados 
-		en dentro de un directorio  (sin acentos o simbolos) SOLO FUENTES, y 
-		modifica el README.md que sea una portada.
-	- 80% Sigue el templete proporcionado por el docente y corre 8 Problemas 
-		(o si incremento en programas por supuesta dificultad) completamente 
-		en GITHUB Classroom (no repositorio personal), los archivos deben 
-		tener su extensión .CPP (no .txt, etc.) acomodados en dentro de un 
-		directorio (sin acentos o simbolos) SOLO FUENTES, y modifica el 
-		README.md que sea una portada.
-	- 70% Sigue el templete proporcionado por el docente y corre 7 Problemas 
-		(o si incremento en programas por supuesta dificultad) completamente 
-		en GITHUB Classroom (no repositorio personal), los archivos deben 
-		tener su extensión .CPP (no .txt, etc.) acomodados en dentro de un 
-		directorio (sin acentos o simbolos) SOLO FUENTES, y modifica el 
-		README.md que sea una portada.
-	- 50 % EVITA Y NO USA el templete proporcionado por el docente sus Problemas 
-		(o si incremento en programas por supuesta dificultad) completamente 
-		en GITHUB Classroom (no repositorio personal) con mas de 7 problemas 
-		resueltos, los archivos NO tener su extensión .CPP y  puede o no estar 
-		acomodados en dentro de un directorio (sin acentos o simbolos) 
-		SOLO FUENTES, y modifica el README.md que sea una portada.
-
-ENTREGA:
-
-	URL del GitHub Classroom, y recuerde arreglar la PORTADA, quitar todos los 
-		elementos extras del templete, acomodarlo bien para su presentación 
-		solo lo necesario.
-
-	</p>
-
-</pre>
-
-
-<pre>
-
-	<p align=center>
 # 6. Llamadas al sistema y entrada/salida
 
+<pre>
+	<p align=center>
+<b>Introducción</b>
+		</p>
+	<p align=left>
+En este proyecto lo que mostraremos es un programa en el que al ingresar una línea de texto, el programa nos arroje el mismo 
+resultado que escribimos anteriormente. a su vez contamos con información en el marco teórico que revela los puntos más 
+importantes del proyecto en cuanto a teoría.
 
-# Introducción
-En este proyecto lo que mostraremos es un programa en el que al ingresar una línea de texto, el programa nos arroje el mismo resultado que escribimos anteriormente. a su vez contamos con información en el marco teórico que revela los puntos más importantes del proyecto en cuanto a teoría.
+	</p>
+</pre>
 
-# Marco Teórico:
-En sistemas operativos basados en Linux, las llamadas al sistema son la forma en que un programa solicita servicios del núcleo del sistema operativo. Estas llamadas permiten a los programas acceder a recursos del sistema como archivos, dispositivos de hardware, y otros servicios del kernel. Las llamadas al sistema proporcionan una interfaz entre el espacio de usuario y el espacio del kernel, permitiendo a los programas ejecutarse de manera segura y eficiente.
+<pre>
+	<p align=center>
+<b>Marco Teórico: </b>
+	</p>
 
-Para operaciones de entrada/salida, los programas pueden utilizar llamadas al sistema como read() y write(), que permiten leer y escribir datos desde y hacia dispositivos, archivos o flujos de datos. Estas llamadas al sistema están optimizadas para interactuar eficientemente con el hardware y proporcionar una interfaz estándar para los programas.
+	<p align=left>
+En sistemas operativos basados en Linux, las llamadas al sistema son la forma en que un programa solicita servicios del núcleo 
+del sistema operativo. Estas llamadas permiten a los programas acceder a recursos del sistema como archivos, dispositivos de 
+hardware, y otros servicios del kernel. Las llamadas al sistema proporcionan una interfaz entre el espacio de usuario y el espacio 
+del kernel, permitiendo a los programas ejecutarse de manera segura y eficiente.
 
-En sistemas embebidos como Raspberry Pi, el mapeo de periféricos en memoria es una técnica común para acceder y controlar hardware externo. Esto implica asignar direcciones de memoria a los registros de control de los periféricos, lo que permite a los programas interactuar directamente con ellos como si estuvieran accediendo a la memoria.
+Para operaciones de entrada/salida, los programas pueden utilizar llamadas al sistema como read() y write(), que permiten leer y 
+escribir datos desde y hacia dispositivos, archivos o flujos de datos. Estas llamadas al sistema están optimizadas para interactuar 
+eficientemente con el hardware y proporcionar una interfaz estándar para los programas.
 
-# Concepto de llamadas al sistema (system calls):
+En sistemas embebidos como Raspberry Pi, el mapeo de periféricos en memoria es una técnica común para acceder y controlar hardware 
+externo. Esto implica asignar direcciones de memoria a los registros de control de los periféricos, lo que permite a los programas 
+interactuar directamente con ellos como si estuvieran accediendo a la memoria.
+</pre>
 
-Las llamadas al sistema son interfaces proporcionadas por el sistema operativo para permitir que los programas soliciten servicios del núcleo del sistema operativo. 
-Las llamadas al sistema son el mecanismo fundamental a través del cual los programas en el espacio de usuario pueden acceder a recursos y servicios del sistema operativo.
+ <pre>
+	<p align=center>
+<b> Concepto de llamadas al sistema (system calls): </b>
+		</p>
 
+Las llamadas al sistema son interfaces proporcionadas por el sistema operativo para permitir que los programas soliciten servicios 
+del núcleo del sistema operativo. 
+Las llamadas al sistema son el mecanismo fundamental a través del cual los programas en el espacio de usuario pueden acceder a
+recursos y servicios del sistema operativo.
+ </pre>
 
-# Cómo emplear las llamadas al sistema:
-La mayor parte del código de Linux está escrito en C. Aunque técnicamente, se puede invocar una llamada al sistema desde cualquier lenguaje de programación, optaremos por el C, ya que es el lenguaje nativo del sistema operativo. Uno podría argumentar que analizar las llamadas al sistema desde un lenguaje ensamblador sería una aproximación más directa, pero esto no es del todo preciso. Linux está diseñado para funcionar en una variedad de arquitecturas, cada una con su propia manera de expresar las llamadas al sistema en código máquina. En C, estos detalles se vuelven transparentes, ya que es un lenguaje de nivel superior que está menos ligado a la arquitectura subyacente. No obstante, mencionaremos algunos aspectos.
+ <pre>
 
-# Tipos de llamadas al sistema:
-Las llamadas al sistema pueden clasificarse en diferentes categorías, como operaciones de administración de procesos, gestión de memoria, operaciones de entrada/salida, comunicación entre procesos, gestión de archivos y sistemas de archivos, y operaciones de red, entre otros.
+	<p align=center>
+<b> Cómo emplear las llamadas al sistema: </b>
+		</p>
+La mayor parte del código de Linux está escrito en C. Aunque técnicamente, se puede invocar una llamada al sistema desde cualquier 
+lenguaje de programación, optaremos por el C, ya que es el lenguaje nativo del sistema operativo. Uno podría argumentar que analizar 
+las llamadas al sistema desde un lenguaje ensamblador sería una aproximación más directa, pero esto no es del todo preciso. Linux 
+está diseñado para funcionar en una variedad de arquitecturas, cada una con su propia manera de expresar las llamadas al sistema en
+código máquina. En C, estos detalles se vuelven transparentes, ya que es un lenguaje de nivel superior que está menos ligado a la 
+arquitectura subyacente. No obstante, mencionaremos algunos aspectos.
+ </pre>
 
-- Operaciones de entrada/salida (I/O):
-La entrada/salida (I/O) es un aspecto fundamental del funcionamiento de los sistemas informáticos, ya que implica la transferencia de datos entre el sistema y dispositivos externos.
-Las operaciones de entrada/salida pueden ser sincrónicas o asíncronas, dependiendo de si el programa espera o no a que se complete la operación antes de continuar con otras tareas.
+ <pre>
+	<p align=center>
+<b> Tipos de llamadas al sistema: </b>
+		</p>
+Las llamadas al sistema pueden clasificarse en diferentes categorías, como operaciones de administración de procesos, gestión 
+de memoria, operaciones de entrada/salida, comunicación entre procesos, gestión de archivos y sistemas de archivos, y operaciones 
+de red, entre otros.
 
-- Llamadas al sistema relacionadas con entrada/salida:
-Las llamadas al sistema como read() y write() son utilizadas por los programas para leer y escribir datos desde y hacia dispositivos de entrada/salida como archivos, sockets de red y dispositivos de hardware.
-Otras llamadas al sistema relacionadas con entrada/salida incluyen open(), close(), ioctl(), fcntl(), select(), poll(), entre otras, que proporcionan diversas funcionalidades para gestionar y controlar operaciones de entrada/salida.
+<b>- Operaciones de entrada/salida (I/O): </b>
+La entrada/salida (I/O) es un aspecto fundamental del funcionamiento de los sistemas informáticos, ya que implica la transferencia 
+de datos entre el sistema y dispositivos externos.
+Las operaciones de entrada/salida pueden ser sincrónicas o asíncronas, dependiendo de si el programa espera o no a que se complete
+la operación antes de continuar con otras tareas.
 
-- Optimización de entrada/salida:
-Los sistemas operativos implementan técnicas de optimización para mejorar el rendimiento de las operaciones de entrada/salida, como la utilización de búferes de entrada/salida, operaciones asíncronas y técnicas de multiplexación para gestionar múltiples operaciones de entrada/salida de manera eficiente.
+<b>- Llamadas al sistema relacionadas con entrada/salida:</b>
+Las llamadas al sistema como read() y write() son utilizadas por los programas para leer y escribir datos desde y hacia dispositivos 
+de entrada/salida como archivos, sockets de red y dispositivos de hardware.
+Otras llamadas al sistema relacionadas con entrada/salida incluyen open(), close(), ioctl(), fcntl(), select(), poll(), entre otras, 
+que proporcionan diversas funcionalidades para gestionar y controlar operaciones de entrada/salida.
 
-- Gestión de periféricos en sistemas embebidos:
-En sistemas embebidos, como Raspberry Pi, el mapeo de periféricos en memoria es una técnica común para acceder y controlar hardware externo, lo que permite a los programas interactuar directamente con los periféricos como si estuvieran accediendo a la memoria del sistema.
+<b>- Optimización de entrada/salida:</b>
+Los sistemas operativos implementan técnicas de optimización para mejorar el rendimiento de las operaciones de entrada/salida, como 
+la utilización de búferes de entrada/salida, operaciones asíncronas y técnicas de multiplexación para gestionar múltiples operaciones 
+de entrada/salida de manera eficiente.
+
+<b>- Gestión de periféricos en sistemas embebidos: </b>
+En sistemas embebidos, como Raspberry Pi, el mapeo de periféricos en memoria es una técnica común para acceder y controlar hardware 
+externo, lo que permite a los programas interactuar directamente con los periféricos como si estuvieran accediendo a la memoria del 
+sistema.
 
 	</p>
 
 </pre>
 
-# Programa Ejemplo:
+<pre>
+	<p align=center>
+<b># Programa Ejemplo: </b>
+		</p>
 
-Este programa utiliza las llamadas al sistema read() y write() para leer una cadena desde la entrada estándar (teclado) y escribirla en la salida estándar (pantalla). La entrada y salida estándar están representadas por los descriptores de archivo STDIN_FILENO y STDOUT_FILENO respectivamente.
-
+Este programa utiliza las llamadas al sistema read() y write() para leer una cadena desde la entrada estándar (teclado) y escribirla 
+en la salida estándar (pantalla). La entrada y salida estándar están representadas por los descriptores de archivo STDIN_FILENO y 
+STDOUT_FILENO respectivamente.
+</pre>
 ```C
 User
 #include <unistd.h> // Para las llamadas al sistema read() y write()
