@@ -147,6 +147,8 @@ En sistemas embebidos como Raspberry Pi, el mapeo de periféricos en memoria es 
 
 # Programa Ejemplo:
 
+Este programa utiliza las llamadas al sistema read() y write() para leer una cadena desde la entrada estándar (teclado) y escribirla en la salida estándar (pantalla). La entrada y salida estándar están representadas por los descriptores de archivo STDIN_FILENO y STDOUT_FILENO respectivamente.
+
 ```C
 User
 #include <unistd.h> // Para las llamadas al sistema read() y write()
